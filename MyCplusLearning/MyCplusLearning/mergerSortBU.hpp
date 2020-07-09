@@ -27,7 +27,7 @@ void __mergeBU(T arr[], int left, int right, int mid) {
             arr[k] = arrTmp[l - left];
             l++;
         }
-        else if(arr[l] > arr[r]) {
+        else if(arrTmp[l - left] > arrTmp[r - left]) {
             arr[k] = arrTmp[r - left];
             r++;
         }
